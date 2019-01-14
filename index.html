@@ -35,7 +35,7 @@
               </svg>
               Все товары
                 <ul>
-                  <li class="js-back">Назад</li>
+                  <li class="js-back-second back">Назад</li>
                   <li>Светотехника</li>
                   <li>Товары для дома</li>
                   <li>Игрушки</li>
@@ -49,11 +49,12 @@
             <li>
               Зима
               <ul style="display:none;">
-                <li class="js-back">Назад</li>
+                <li class="js-back-second back">Назад</li>
                 <li>Бассейны и аксессуары
                   <div class="headerSubmenu">
-                    <div class="headerSubmenu__wrapper">
-                      <div class="headerSubmenuLists">
+                    <ul class="headerSubmenu__wrapper">
+                      <li class="js-back-third back">Назад</li>
+                      <li class="headerSubmenuLists">
                         <ul>
                           <li><a href="javascript:void(0)">Украшения на ёлку</a></li>
                           <li><a href="javascript:void(0)">Пиротехника</a></li>
@@ -74,8 +75,8 @@
                           <li><a href="javascript:void(0)">Подарки</a></li>
                           <li><a href="javascript:void(0)">Фрукты</a></li>
                         </ul>
-                      </div>
-                      <div class="headerSubmenuImages">
+                      </li>
+                      <li class="headerSubmenuImages">
                         <div class="headerSubmenuImage">
                           <a href="javascript:void(0)">
                             <img src="img/sub.jpg" alt="Шарик">
@@ -86,14 +87,15 @@
                             <img src="img/sub.jpg" alt="Шарик">
                           </a>
                         </div>
-                      </div>
-                    </div>
+                      </li>
+                    </ul>
                   </div>
                 </li>
                 <li>Новогодние товары
                   <div class="headerSubmenu">
-                    <div class="headerSubmenu__wrapper">
-                      <div class="headerSubmenuLists">
+                    <ul class="headerSubmenu__wrapper">
+                      <li class="js-back-third back">Назад</li>
+                      <li class="headerSubmenuLists">
                         <ul>
                           <li><a href="javascript:void(0)">Украшения на ёлку</a></li>
                           <li><a href="javascript:void(0)">Пиротехника</a></li>
@@ -114,8 +116,8 @@
                           <li><a href="javascript:void(0)">Подарки</a></li>
                           <li><a href="javascript:void(0)">Фрукты</a></li>
                         </ul>
-                      </div>
-                      <div class="headerSubmenuImages">
+                      </li>
+                      <li class="headerSubmenuImages">
                         <div class="headerSubmenuImage">
                           <a href="javascript:void(0)">
                             <img src="img/sub.jpg" alt="Шарик">
@@ -126,14 +128,15 @@
                             <img src="img/sub.jpg" alt="Шарик">
                           </a>
                         </div>
-                      </div>
-                    </div>
+                      </li>
+                    </ul>
                   </div>
                 </li>
                 <li>Игрушки
                   <div class="headerSubmenu">
-                    <div class="headerSubmenu__wrapper">
-                      <div class="headerSubmenuLists">
+                    <ul class="headerSubmenu__wrapper">
+                      <li class="js-back-third back">Назад</li>
+                      <li class="headerSubmenuLists">
                         <ul>
                           <li><a href="javascript:void(0)">Украшения на ёлку</a></li>
                           <li><a href="javascript:void(0)">Пиротехника</a></li>
@@ -154,8 +157,8 @@
                           <li><a href="javascript:void(0)">Подарки</a></li>
                           <li><a href="javascript:void(0)">Фрукты</a></li>
                         </ul>
-                      </div>
-                      <div class="headerSubmenuImages">
+                      </li>
+                      <li class="headerSubmenuImages">
                         <div class="headerSubmenuImage">
                           <a href="javascript:void(0)">
                             <img src="img/sub.jpg" alt="Шарик">
@@ -166,8 +169,8 @@
                             <img src="img/sub.jpg" alt="Шарик">
                           </a>
                         </div>
-                      </div>
-                    </div>
+                      </li>
+                    </ul>
                   </div>
                 </li>
                 <li>Светотехника</li>
@@ -180,7 +183,7 @@
             <li>
               Лето
               <ul style="display: none;">
-                <li class="js-back">Назад</li>
+                <li class="js-back-second back">Назад</li>
                 <li>Новогодние товары</li>
                 <li>Светотехника</li>
                 <li>Товары для дома</li>
@@ -290,7 +293,7 @@
             </div>
             <div class="productDetailsAdd">
               <button class="productDetailsAdd__addToCart">В корзину</button>
-              <button class="productDetailsAdd__addToFav">
+              <button class="productDetailsAdd__addToFav js-add-to-fav">
                 <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                 </svg>
@@ -302,7 +305,8 @@
     </section>
     <section class="productDetailsSection">
       <div class="container">
-        <div class="row">
+        <div class="row detailsRow">
+          <div class="detailsRow__overlay"></div>
           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
             <div class="productDetailsColumn">
               <p class="productDetailsColumn__header">О товаре</p>
@@ -378,6 +382,7 @@
               </ul>
             </div>
           </div>
+          <a href="javascript:void(0)" class="showMore">Показать больше</a>
         </div>
       </div>
     </section>
@@ -391,7 +396,7 @@
                 <div class="productCard">
                   <div class="productImage">
                     <img src="img/item.png" alt="Недавно просмотрено" class="productImage__image">
-                    <button class="productImage__addToFav">
+                    <button class="productImage__addToFav js-add-to-fav">
                       <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                       </svg>
@@ -411,7 +416,7 @@
                 <div class="productCard">
                   <div class="productImage">
                     <img src="img/item.png" alt="Недавно просмотрено" class="productImage__image">
-                    <button class="productImage__addToFav">
+                    <button class="productImage__addToFav js-add-to-fav">
                       <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                       </svg>
@@ -431,7 +436,7 @@
                 <div class="productCard">
                   <div class="productImage">
                     <img src="img/item.png" alt="Недавно просмотрено" class="productImage__image">
-                    <button class="productImage__addToFav">
+                    <button class="productImage__addToFav js-add-to-fav">
                       <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                       </svg>
@@ -451,7 +456,7 @@
                 <div class="productCard">
                   <div class="productImage">
                     <img src="img/item.png" alt="Недавно просмотрено" class="productImage__image">
-                    <button class="productImage__addToFav">
+                    <button class="productImage__addToFav js-add-to-fav">
                       <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                       </svg>
@@ -471,7 +476,7 @@
                 <div class="productCard">
                   <div class="productImage">
                     <img src="img/item.png" alt="Недавно просмотрено" class="productImage__image">
-                    <button class="productImage__addToFav">
+                    <button class="productImage__addToFav js-add-to-fav">
                       <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                       </svg>
@@ -491,7 +496,7 @@
                 <div class="productCard">
                   <div class="productImage">
                     <img src="img/item.png" alt="Недавно просмотрено" class="productImage__image">
-                    <button class="productImage__addToFav">
+                    <button class="productImage__addToFav js-add-to-fav">
                       <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                       </svg>
@@ -511,7 +516,7 @@
                 <div class="productCard">
                   <div class="productImage">
                     <img src="img/item.png" alt="Недавно просмотрено" class="productImage__image">
-                    <button class="productImage__addToFav">
+                    <button class="productImage__addToFav js-add-to-fav">
                       <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                       </svg>
@@ -531,7 +536,7 @@
                 <div class="productCard">
                   <div class="productImage">
                     <img src="img/item.png" alt="Недавно просмотрено" class="productImage__image">
-                    <button class="productImage__addToFav">
+                    <button class="productImage__addToFav js-add-to-fav">
                       <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                       </svg>
@@ -563,7 +568,7 @@
             <div class="productCard">
               <div class="productImage">
                 <img src="img/item.png" alt="Недавно просмотрено" class="productImage__image">
-                <button class="productImage__addToFav">
+                <button class="productImage__addToFav js-add-to-fav">
                   <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                   </svg>
@@ -575,7 +580,7 @@
             <div class="productCard">
               <div class="productImage">
                 <img src="img/item.png" alt="Недавно просмотрено" class="productImage__image">
-                <button class="productImage__addToFav">
+                <button class="productImage__addToFav js-add-to-fav added">
                   <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                   </svg>
@@ -587,7 +592,7 @@
             <div class="productCard">
               <div class="productImage">
                 <img src="img/item.png" alt="Недавно просмотрено" class="productImage__image">
-                <button class="productImage__addToFav">
+                <button class="productImage__addToFav js-add-to-fav">
                   <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                   </svg>
@@ -599,7 +604,7 @@
             <div class="productCard">
               <div class="productImage">
                 <img src="img/item.png" alt="Недавно просмотрено" class="productImage__image">
-                <button class="productImage__addToFav">
+                <button class="productImage__addToFav js-add-to-fav">
                   <svg viewBox="0 0 25 20" fill="#f2f2f2" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.394 18.0278C7.4632 16.994 2.25853 12.0832 2.25853 7.94777C2.25853 4.58776 4.74003 2.2616 7.4632 2.2616C9.45104 2.2616 10.7504 3.03698 12.394 4.58776C13.4897 3.55391 15.3369 2.2616 17.3247 2.2616C20.0479 2.2616 22.5294 4.58776 22.5294 7.94777C22.5294 12.0832 17.8726 16.2186 12.394 18.0278Z" stroke="black" stroke-width="3"/>
                   </svg>

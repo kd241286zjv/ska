@@ -197,4 +197,7 @@
     width: 100%;
     justify-content: space-around;
   }
+  .productSlider .swiper-slide{
+    height: 300px;
+  }
 }
