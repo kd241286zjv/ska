@@ -85,7 +85,6 @@ $(document).ready(function(){
     });
   }
   $('.showMore').click(function(){
-    $('.detailsRow').css('max-height', 'unset');
-    $('.detailsRow__overlay').css('opacity', '0');
+    $('.detailsRow').toggleClass('toggled');
   });
 });
