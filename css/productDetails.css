@@ -80,7 +80,7 @@ ul.productDetailsColumn__list li span{
   max-height: unset;
 }
 .detailsRow.toggled .detailsRow__overlay{
-  opacity: 0;
+  display: none;
 }
 
 @media(max-width: 991px){
