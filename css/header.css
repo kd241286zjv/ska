@@ -205,6 +205,9 @@ header{
   height: 100vh;
   background-color: rgba(0,0,0,.5);
 }
+.back{
+  display: none;
+}
 
 @media(max-width: 1199px){
   .searchPanel__input{
