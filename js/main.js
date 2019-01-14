@@ -58,13 +58,13 @@ $(document).ready(function(){
       $(this).toggleClass('is-active');
       $('.headerNav').toggleClass('visible');
     });
-    $('.headerNav > ul > li').click(function(event){
+    $('.headerNav > ul > li:not(.back)').click(function(event){
       event.stopPropagation();
       $(this).parent().addClass('secondLevel');
       $(this).siblings().find('ul').fadeOut('100');
       $(this).find('ul').fadeIn('100');
     });
-    $('.headerNav > ul > li > ul > li').click(function(event){
+    $('.headerNav > ul > li > ul > li:not(.back)').click(function(event){
       event.stopPropagation();
       $('ul.secondLevel').removeClass('secondLevel').addClass('thirdLevel');
       $(this).siblings().find('.headerSubmenu').fadeOut('100');
