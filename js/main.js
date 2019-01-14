@@ -50,12 +50,23 @@ $(document).ready(function(){
       }
     });
   }else{
+    $('.headerNav > ul > li > ul').css('display', 'none');
     $('.headerNav > ul > li').removeClass('active');
     $('.hamburger').click(function(){
       $('body').toggleClass('fixedBody');
       $('.mobileOverlay').fadeToggle('300');
       $(this).toggleClass('is-active');
       $('.headerNav').toggleClass('visible');
+    });
+    $('.headerNav > ul > li').click(function(){
+      $(this).parent().addClass('secondLevel');
+      $(this).siblings().find('ul').fadeOut('100');
+      $(this).find('ul').fadeIn('100');
+    });
+    $('.js-back').click(function(event){
+      event.stopPropagation();
+      $('ul.secondLevel').removeClass('secondLevel');
+      $(this).parent().fadeOut('');
     });
   }
 });

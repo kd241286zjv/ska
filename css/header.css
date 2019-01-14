@@ -245,6 +245,8 @@ header{
     transform: translateX(-100%);
     background-color: #fff;
     z-index: 12;
+    overflow-x:hidden;
+    overflow-y: scroll;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
@@ -265,6 +267,15 @@ header{
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+  }
+  .headerNav > ul > li > ul > li{
+    height: 75px;
+  }
+  .headerNav ul.secondLevel{
+    transform:translateX(-100%);
   }
   .headerNav ul li{
     color: #333;
@@ -274,6 +285,31 @@ header{
   }
   .headerNav ul li svg{
     display: none;
+  }
+  .headerNav > ul > li > ul{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    display: block;
+  }
+  .headerNav > ul > li >ul.visible{
+    transform:translateX(0);
+  }
+  .headerNav > ul > li{
+    height: 75px;
+  }
+  .js-back{
+    background-color: rgba(255,0,0,.25);
+  }
+  .headerNav > ul > li:hover{
+    background-color: #f8f6f6;
+  }
+  .headerNav li{
+    padding: 0 15px;
+    text-align: center;
   }
 }
 @media(max-width: 767px){

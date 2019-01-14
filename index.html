@@ -34,7 +34,8 @@
                 <rect y="18" width="24" height="3" fill="white"/>
               </svg>
               Все товары
-                <ul class="container">
+                <ul>
+                  <li class="js-back">Назад</li>
                   <li>Светотехника</li>
                   <li>Товары для дома</li>
                   <li>Игрушки</li>
@@ -48,6 +49,7 @@
             <li>
               Зима
               <ul style="display:none;">
+                <li class="js-back">Назад</li>
                 <li>Бассейны и аксессуары
                   <div class="headerSubmenu">
                     <div class="headerSubmenu__wrapper">
@@ -178,6 +180,7 @@
             <li>
               Лето
               <ul style="display: none;">
+                <li class="js-back">Назад</li>
                 <li>Новогодние товары</li>
                 <li>Светотехника</li>
                 <li>Товары для дома</li>
@@ -281,7 +284,8 @@
               <p class="productDetailsPrice__actual">162.4 руб.</p>
             </div>
             <div class="productDetailsMisc">
-              <p class="productDetailsMisc__availability unavailable">В наличии</p>
+              <!-- если товар недоступен, ставим класс .unavailable -->
+              <p class="productDetailsMisc__availability available">В наличии</p>
               <a href="javascript:void(0)" class="productDetailsMisc__info">Информация о доставке</a>
             </div>
             <div class="productDetailsAdd">
