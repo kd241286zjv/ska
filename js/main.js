@@ -83,9 +83,9 @@ $(document).ready(function(){
     $('.js-add-to-fav').click(function(){
       $(this).toggleClass('added');
     });
-    $('.showMore').click(function(){
-      console.log('here');
-      $('.detailsRow').css('max-height', 'auto');
-    });
   }
+  $('.showMore').click(function(){
+    $('.detailsRow').css('max-height', 'unset');
+    $('.detailsRow__overlay').css('opacity', '0');
+  });
 });
