@@ -80,10 +80,10 @@ $(document).ready(function(){
       $('ul.thirdLevel').addClass('secondLevel').removeClass('thirdLevel');
       $(this).parent('.headerSubmenu').fadeOut('100');
     });
-    $('.js-add-to-fav').click(function(){
-      $(this).toggleClass('added');
-    });
   }
+  $('.js-add-to-fav').click(function(){
+    $(this).toggleClass('added');
+  });
   $('.showMore').click(function(){
     $('.detailsRow').toggleClass('toggled');
   });
