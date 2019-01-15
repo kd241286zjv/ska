@@ -90,8 +90,24 @@ button{
 p, h1, h2, h3, h4, h5, h6, span{
   cursor: default;
 }
+@keyframes fav{
+  from{transform: scale(1);}
+  50%{transform: scale(1.2);}
+  to{transform: scale(1);}
+}
 button.added svg{
   fill:#000;
+  animation: fav .5s ease;
+}
+.modal-content{
+  position: relative;
+  width: 960px;
+  height: 775px;
+}
+button.close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 @media(max-width: 991px){

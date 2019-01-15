@@ -84,7 +84,22 @@ $(document).ready(function(){
   $('.js-add-to-fav').click(function(){
     $(this).toggleClass('added');
   });
+  var rowHeight = $('.detailsRow').outerHeight();
+  $('.detailsRow').css('height', '300px');
   $('.showMore').click(function(){
-    $('.detailsRow').toggleClass('toggled');
+    $('.detailsRow__overlay').fadeToggle('300');
+    if($('.detailsRow').hasClass('toggled')){
+      $('.detailsRow').animate({
+        height: '300px',
+      }, 300, 'linear', function(){
+        $('.detailsRow').removeClass('toggled');
+      });
+    }else{
+      $('.detailsRow').animate({
+        height: rowHeight,
+      }, 300, function(){
+        $('.detailsRow').addClass('toggled');
+      });
+    }
   });
 });

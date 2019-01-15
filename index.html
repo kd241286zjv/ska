@@ -289,7 +289,7 @@
             <div class="productDetailsMisc">
               <!-- если товар недоступен, ставим класс .unavailable -->
               <p class="productDetailsMisc__availability available">В наличии</p>
-              <a href="javascript:void(0)" class="productDetailsMisc__info">Информация о доставке</a>
+              <a href="javascript:void(0)" class="productDetailsMisc__info" data-toggle="modal" data-target="#delivery">Информация о доставке</a>
             </div>
             <div class="productDetailsAdd">
               <button class="productDetailsAdd__addToCart">В корзину</button>
@@ -742,6 +742,26 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal fade" id="delivery" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 22L22 1" stroke="#666666" stroke-width="2"/>
+              <path d="M1 0.999999L22 22" stroke="#666666" stroke-width="2"/>
+            </svg>
+          </button>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
