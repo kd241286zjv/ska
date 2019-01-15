@@ -102,4 +102,7 @@ $(document).ready(function(){
       });
     }
   });
+  $('.citySelection__select').click(function(){
+    $('.overlay-wrapper').fadeToggle('300');
+  });
 });

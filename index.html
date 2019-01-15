@@ -42,7 +42,7 @@
                   <li>Бассейны и аксессуары</li>
                   <li>Товары для отдыха</li>
                   <li>Новогодние товары</li>
-                  <li>Скидки</li>
+                  <li class="discount">Скидки</li>
                   <li>Все</li>
                 </ul>
             </li>
@@ -176,7 +176,7 @@
                 <li>Светотехника</li>
                 <li>Товары для отдыха</li>
                 <li>Товары для дома</li>
-                <li>Скидки</li>
+                <li class="discount">Скидки</li>
                 <li>Все</li>
               </ul>
             </li>
@@ -190,7 +190,7 @@
                 <li>Бассейны и аксессуары</li>
                 <li>Товары для отдыха</li>
                 <li>Игрушки</li>
-                <li>Скидки</li>
+                <li class="discount">Скидки</li>
                 <li>Все</li>
               </ul>
             </li>
@@ -753,11 +753,115 @@
             </svg>
           </button>
           <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="modal-wrapper">
+              <h2>Наличие на складах<br>и информация о доставке</h2>
+              <div class="citySelection">
+                <p class="citySelection__selected">Доставка в:<span>Краснодар</span></p>
+                <button class="citySelection__select">Другие города</button>
+              </div>
+              <table class="modalTable">
+                <thead>
+                  <tr>
+                    <td><p>Адрес</p></td>
+                    <td><p>Забрать</p></td>
+                    <td><p>Режим работы</p></td>
+                    <td></td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><p>ТРК "Галактика"</p><span>Краснодар, ул. Уральская 98/1</span></td>
+                    <td><p>18.10.2018</p><span>после 19:00</span></td>
+                    <td><p>09:00-19:00</p><span>ПН-ВС</span></td>
+                    <td><button class="selectPoint">Выбрать</button></td>
+                  </tr>
+                  <tr>
+                    <td><p>ТРК "Галактика"</p><span>Краснодар, ул. Уральская 98/1</span></td>
+                    <td><p>18.10.2018</p><span>после 19:00</span></td>
+                    <td><p>09:00-19:00</p><span>ПН-ВС</span></td>
+                    <td><button class="selectPoint">Выбрать</button></td>
+                  </tr>
+                  <tr>
+                    <td><p>ТРК "Галактика"</p><span>Краснодар, ул. Уральская 98/1</span></td>
+                    <td><p>18.10.2018</p><span>после 19:00</span></td>
+                    <td><p>09:00-19:00</p><span>ПН-ВС</span></td>
+                    <td><button class="selectPoint">Выбрать</button></td>
+                  </tr>
+                  <tr>
+                    <td><p>ТРК "Галактика"</p><span>Краснодар, ул. Уральская 98/1</span></td>
+                    <td><p>18.10.2018</p><span>после 19:00</span></td>
+                    <td><p>09:00-19:00</p><span>ПН-ВС</span></td>
+                    <td><button class="selectPoint">Выбрать</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="modalButtons">
+                <a href="javascript:void(0)" class="modalButtons__button">Возврат товара</a>
+                <a href="javascript:void(0)" class="modalButtons__button">Другие способы доставки</a>
+              </div>
+              <div class="overlay-wrapper">
+                <div class="overlay-inner">
+                  <h2>Выбрать город</h2>
+                  <div class="citySelection">
+                    <p class="citySelection__selected">Доставка в:<span>Краснодар</span></p>
+                    <button class="citySelection__select">Отменить</button>
+                  </div>
+                  <div class="cityList">
+                    <div class="cityList__search">
+                      <p>Поиск города:</p>
+                      <input type="text">
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)">Краснодар</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Москва</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Ростов-на-Дону</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Ижевск</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Красноярск</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Новороссийск</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Смоленск</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Самара</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Анапа</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Геленджик</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Санкт-Петербург</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Владивосток</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Новосибирск</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Тюмень</a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)">Абинск</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

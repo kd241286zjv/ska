@@ -208,6 +208,40 @@ header{
 .back{
   display: none;
 }
+@media(min-width: 1200px){
+  header li.discount{
+    background-color: #CD1948;
+    position: relative;
+  }
+  .headerNav > ul > li > ul > li.discount:hover, .headerNav > ul > li > ul > li.discount.active{
+    background-color: #CD1948;
+    color: #333;
+  }
+  header .discount::before{
+    content:'';
+    display: block;
+    width: 10px;
+    height: 100%;
+    background-color: #CD1948;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewX(-190deg);
+    transform-origin: 0 0;
+  }
+  header .discount::after{
+    content:'';
+    display: block;
+    width: 10px;
+    height: 100%;
+    background-color: #CD1948;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    transform: skewX(-190deg);
+    transform-origin: 0 0;
+  }
+}
 
 @media(max-width: 1199px){
   .searchPanel__input{
