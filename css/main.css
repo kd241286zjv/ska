@@ -99,9 +99,12 @@ button.added svg{
   fill:#000;
   animation: fav .5s ease;
 }
+.modal-dialog{
+  max-width: 960px;
+}
 .modal-content{
   position: relative;
-  width: 960px;
+  width: 100%;
   height: 775px;
 }
 button.close{
