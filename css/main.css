@@ -6,10 +6,13 @@
 @import url('bundle.css');
 @import url('recent.css');
 @import url('misc.css');
+@import url('filters.css');
 @import url('footer.css');
 
 *{
   box-sizing: border-box;
+}
+*:active, *:focus{
   outline: none;
 }
 body{
