@@ -1,4 +1,18 @@
 .discountBar{
   color: #fff;
   background-color: #1C305B;
+  padding: 10px 0;
+}
+.discountInner{
+  margin: 0 auto;
+}
+.discountInner a{
+  color: #FFA8B2;
+  font-size: 18px;
+}
+
+@media(max-width: 991px){
+  .discountBar{
+    display: none;
+  }
 }

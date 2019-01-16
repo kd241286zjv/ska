@@ -2,12 +2,17 @@ header{
   background-color: #2d2d2d;
   color: #fff;
 }
+@media(min-width: 1200px){
+  header .container{
+    max-width: 1366px;
+  }
+}
 .headerRow{
   -ms-align-items: center;
   align-items: center;
   justify-content: space-between;
   flex-wrap:nowrap;
-  height: 90px;
+  height: 60px;
 }
 .logo{
   display: -webkit-flex;
@@ -15,14 +20,19 @@ header{
   display: flex;
   -ms-align-items: center;
   align-items: center;
+  max-height: 80%;
+  margin-right: 40px;
 }
 .logo img{
   margin-right: 22px;
+  height: 48px;
+  width: auto;
 }
 .logo p{
   font-size: 18px;
   text-transform: uppercase;
   max-width: 130px;
+  line-height: 1.2;
 }
 .headerNav{
   font-size: 16px;
@@ -40,7 +50,7 @@ header{
   -ms-align-items: center;
   align-items: center;
   justify-content: center;
-  height: 90px;
+  height: 60px;
   padding: 0 15px;
   cursor: pointer;
   -webkit-transition: .3s all ease;
@@ -59,9 +69,10 @@ header{
 }
 .searchPanel{
   position: relative;
+  flex-grow: 1;
 }
 .searchPanel__input{
-  width: 400px;
+  width: 100%;
   height: 36px;
   background-color: #fff;
   border: none;
@@ -86,16 +97,6 @@ header{
   width: 20px;
   height: 20px;
 }
-.discountBar{
-  padding: 15px 0;
-}
-.discountInner{
-  margin: 0 auto;
-}
-.discountInner a{
-  color: #FFA8B2;
-  font-size: 18px;
-}
 .headerNav > ul > li > svg{
   margin-right: 10px;
 }
@@ -107,8 +108,8 @@ header{
   width: 100%;
   position: absolute;
   left: 0;
-  height: 54px;
-  top: 90px;
+  height: 50px;
+  top: 60px;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -136,9 +137,17 @@ header{
   color: #666;
   background-color: #F8F6F6;
 }
+li.headerSubmenuLists > ul > li{
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
+  color: #2A59D1;
+}
 .submenuSection{
   background-color: #525050;
-  height: 54px;
+  height: 50px;
   padding: 0;
 }
 .headerRow{
@@ -151,7 +160,7 @@ header{
   background-color: #F8F6F6;
   width: 100%;
   position: absolute;
-  top: 54px;
+  top: 50px;
   cursor: default;
   left: 0;
   z-index: 11;
@@ -208,7 +217,7 @@ header{
 .back{
   display: none;
 }
-@media(min-width: 1200px){
+@media(min-width: 992px){
   header li.discount{
     background-color: #CD1948;
     position: relative;
@@ -243,11 +252,6 @@ header{
   }
 }
 
-@media(max-width: 1199px){
-  .searchPanel__input{
-    width: 250px;
-  }
-}
 @media(max-width: 991px){
   .back{
     height: 75px;

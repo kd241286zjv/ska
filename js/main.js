@@ -105,4 +105,7 @@ $(document).ready(function(){
   $('.citySelection__select').click(function(){
     $('.overlay-wrapper').fadeToggle('300');
   });
+  $('.productImage__remove').click(function(){
+    $(this).parents('.productColumn').fadeOut('');
+  });
 });

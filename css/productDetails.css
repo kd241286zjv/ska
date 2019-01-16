@@ -41,16 +41,18 @@ ul.productDetailsColumn__list li span{
   -ms-align-items: center;
   align-items: center;
   justify-content: center;
-  color: #000;
-  border: 2px solid #D8D8D8;
+  color: #2D2D2D;
+  border: 2px solid #ddd;
   z-index: 3;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
 }
-.showMore:hover{
-  color: #fff;
-  background-color: #d8d8d8;
+@media(min-width: 1200px){
+  .showMore:hover{
+    color: #fff;
+    background-color: #ddd;
+  }
 }
 .detailsRow{
   position: relative;

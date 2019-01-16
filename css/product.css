@@ -40,6 +40,8 @@
 }
 .productSlider .swiper-slide img{
   max-width: 85%;
+  height: 500px;
+  object-fit:contain;
 }
 .product-swiper-container{
   display: -webkit-flex;
@@ -175,6 +177,9 @@
 @media(max-width: 991px){
   .productSlider{
     margin-bottom: 40px;
+  }
+  .productSlider .swiper-slide img{
+    height: 300px;
   }
 }
 @media(max-width: 575px){
