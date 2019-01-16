@@ -13,7 +13,37 @@ footer{
 .footerList__list a{
   font-size: 14px;
 }
+.toTopSection{
+  display: none;
+}
+.toTop{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.toTop p{
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+.toTop svg{
+  margin-right: 5px;
+  height: 20px;
+  width: auto;
+  transform: rotateZ(-90deg);
+}
 
+@media(max-width: 767px){
+  .toTopSection{
+    display: block;
+    background-color: #F8F8F8;
+  }
+}
 @media(max-width: 575px){
   .footerList{
     margin-bottom: 40px;

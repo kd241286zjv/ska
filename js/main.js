@@ -112,4 +112,7 @@ $(document).ready(function(){
   $('.productImage__remove').click(function(){
     $(this).parents('.productColumn').fadeOut('');
   });
+  $('.toTop').click(function(){
+    $("html, body").animate({scrollTop: 0+"px"});
+  });
 });

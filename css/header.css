@@ -7,6 +7,12 @@ header{
     max-width: 1366px;
   }
 }
+.headerNav li{
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  -webkit-background-size: auto 80%;
+  background-size: auto 80%;
+}
 .headerRow{
   -ms-align-items: center;
   align-items: center;
@@ -94,8 +100,8 @@ header{
   cursor: pointer;
 }
 .searchPanel__button svg{
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
 }
 .headerNav > ul > li > svg{
   margin-right: 10px;
@@ -280,6 +286,13 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
   .hamburger{
     display: block;
     order:1;
+    background-color: #2d2d2d;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+  }
+  .hamburger.is-active{
+    transform: translateX(50vw);
   }
   .logo{
     order:2;
@@ -293,11 +306,11 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
   .headerNav{
     position: absolute;
     left: 0;
-    height: calc(100vh - 90px);
+    height:100vh;
     width: 50%;
     border-right: 1px solid #c8c8c8;
     border-bottom: 1px solid #c8c8c8;
-    top: 90px;
+    top: 0;
     transform: translateX(-100%);
     background-color: #fff;
     z-index: 12;
@@ -434,8 +447,20 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
   }
 }
 @media(max-width: 575px){
-  .searchPanel{
+  .searchPanel input{
     display: none;
+  }
+  .searchPanel{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .searchPanel__button{
+    position: static;
+  }
+  .searchPanel__button svg path{
+    fill:#fff;
   }
   .userPanel{
     padding-right: 15px;
