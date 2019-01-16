@@ -429,6 +429,9 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
   .logo p{
     display: none;
   }
+  .logo{
+    margin-right: 0;
+  }
 }
 @media(max-width: 575px){
   .searchPanel{

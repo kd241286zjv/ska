@@ -85,7 +85,11 @@ $(document).ready(function(){
     $(this).toggleClass('added');
   });
   var rowHeight = $('.detailsRow').outerHeight();
-  $('.detailsRow').css('height', '300px');
+  if(screen.width < 1200){
+    $('.detailsRow').css('height', '200px');
+  }else{
+    $('.detailsRow').css('height', '300px');
+  }
   $('.showMore').click(function(){
     $('.detailsRow__overlay').fadeToggle('300');
     if($('.detailsRow').hasClass('toggled')){
