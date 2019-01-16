@@ -38,6 +38,12 @@
   align-items: center;
   justify-content: center;
 }
+.productSlider .swiper-slide a{
+  text-align: center;
+}
+.lb-details{
+  display: none;
+}
 .productSlider .swiper-slide img{
   max-width: 85%;
   height: 500px;

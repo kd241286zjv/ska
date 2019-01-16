@@ -58,6 +58,23 @@
   .bundle-swiper-button-prev, .swiper-container-rtl .bundle-swiper-button-next{
     left: -20px;
   }
+  .swiper-pagination{
+    bottom: -40px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .bundle-swiper-button-next, .bundle-swiper-button-prev{
+    display: none;
+  }
+  .swiper-pagination-bullet{
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+  }
+  .swiper-pagination-bullet-active{
+    background: #333;
+  }
 }
 @media(max-width: 575px){
   .bundle-swiper-button-next, .swiper-container-rtl .bundle-swiper-button-prev{
@@ -68,5 +85,8 @@
   }
   .bundle-swiper-container .swiper-slide{
     padding: 0 30px;
+  }
+  .swiper-pagination{
+    display: none;
   }
 }

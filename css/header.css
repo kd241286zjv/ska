@@ -7,11 +7,15 @@ header{
     max-width: 1366px;
   }
 }
-.headerNav li{
-  background-repeat: no-repeat;
-  background-position: 90% center;
-  -webkit-background-size: auto 80%;
-  background-size: auto 80%;
+.searchOverlay{
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index:12;
+  background-color: rgba(0,0,0,.5);
 }
 .headerRow{
   -ms-align-items: center;
@@ -83,11 +87,15 @@ header{
   background-color: #fff;
   border: none;
   border-radius: 35px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 13;
 }
 .searchPanel__button{
   position: absolute;
   right: 15px;
   top: 4px;
+  z-index: 14;
 }
 .userPanel svg{
   height: 22px;
@@ -224,6 +232,9 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
   display: none;
 }
 @media(min-width: 992px){
+  .headerSocials{
+    display: none;
+  }
   header li.discount{
     background-color: #CD1948;
     position: relative;
@@ -256,9 +267,47 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
     transform: skewX(-190deg);
     transform-origin: 0 0;
   }
+  .headerBottomMenu{
+    display: none;
+  }
+  .bundle-swiper-pagination{
+    display: none;
+  }
+}
+
+.hamburger.is-active:hover, .hamburger:hover{
+  opacity: 1;
 }
 
 @media(max-width: 991px){
+  .headerSocials{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    margin-top: 20px;
+  }
+  .headerBottomMenu{
+    margin-top: 20px;
+  }
+  .headerBottomMenu ul{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #eee;
+  }
+  .headerNav .headerBottomMenu ul li{
+    padding: 10px 0;
+    text-transform: none;
+  }
+  .headerNav li{
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    -webkit-background-size: auto 80%;
+    background-size: auto 80%;
+  }
   .back{
     height: 75px;
     display: -webkit-flex;
@@ -280,11 +329,18 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
   header{
     position: relative;
   }
+  header .container{
+    max-width: 100%;
+  }
+  .userPanel{
+    padding-right: 15px;
+  }
   .submenuSection{
     display: none;
   }
   .hamburger{
     display: block;
+    z-index:15;
     order:1;
     background-color: #2d2d2d;
     -webkit-transition: .3s all ease;
@@ -313,7 +369,7 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
     top: 0;
     transform: translateX(-100%);
     background-color: #fff;
-    z-index: 12;
+    z-index: 15;
     overflow-x:hidden;
     overflow-y: scroll;
     -webkit-transition: .3s all ease;
@@ -342,6 +398,12 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
   }
   .headerNav > ul > li > ul > li{
     height: 75px;
+    text-align:left;
+    justify-content: flex-start;
+  }
+  .headerNav > ul > li > ul > li.back{
+    height: 75px;
+    justify-content: center;
   }
   .headerNav ul.secondLevel{
     transform:translateX(-100%);
@@ -372,6 +434,7 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
   }
   .headerNav > ul > li{
     height: 75px;
+    justify-content: flex-start;
   }
   .back{
     background-color: rgba(255,0,0,.25);
@@ -418,7 +481,8 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    justify-content: center;
+    text-align:left;
+    justify-content: flex-start;
     -ms-align-items: center;
     align-items: center;
     -webkit-transition: .3s all ease;
@@ -447,6 +511,9 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
   }
 }
 @media(max-width: 575px){
+  .searchPanel__button{
+    z-index: 1;
+  }
   .searchPanel input{
     display: none;
   }
