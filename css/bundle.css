@@ -84,7 +84,8 @@
     left: 5px;
   }
   .bundle-swiper-container .swiper-slide{
-    padding: 0 30px;
+    padding: 0 15px;
+    max-width: 80%;
   }
   .swiper-pagination{
     display: none;
