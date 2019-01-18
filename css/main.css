@@ -31,7 +31,7 @@
 *{
   box-sizing: border-box;
 }
-*:active, *:focus{
+a:active, a:focus, button:active, button:focus, div:active, div:focus{
   outline: none;
 }
 body{
