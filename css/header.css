@@ -11,7 +11,7 @@ header{
   display: none;
 }
 .close-mobile{
-  display: block;
+  display: none;
 }
 .searchOverlay{
   display: none;
@@ -63,7 +63,6 @@ header{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  font-family: 'FuturaMediumC';
   -ms-align-items: center;
   align-items: center;
   justify-content: center;
