@@ -9,6 +9,8 @@
 .discountInner a{
   color: #FFA8B2;
   font-size: 18px;
+  font-family: 'FuturaMediumC';
+  font-weight: 700;
 }
 
 @media(max-width: 991px){
