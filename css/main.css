@@ -9,6 +9,25 @@
 @import url('filters.css');
 @import url('footer.css');
 
+@font-face {
+	font-family: 'Futura';
+	src: url('fonts/ParaType - Futura PT Bold.eot');
+	src: url('fonts/futura-normal_18c37033cb2f4666b96bef249d023a4e.woff') format('woff'), url('fonts/futura-normal_18c37033cb2f4666b96bef249d023a4e.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FuturaMediumC';
+	src: url('fonts/FuturaMediumC.eot');
+	src: local('Futura Medium Cyrillic'), local('FuturaMediumC'),
+		url('fonts/FuturaMediumC.eot?#iefix') format('embedded-opentype'),
+		url('fonts/FuturaMediumC.woff') format('woff'),
+		url('fonts/FuturaMediumC.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
 *{
   box-sizing: border-box;
 }
@@ -77,7 +96,9 @@ h2{
   text-align: center;
   margin-bottom: 50px;
   color: #3D3C3C;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  font-family: 'Futura';
   font-weight: 700;
 }
 button{
@@ -154,6 +175,7 @@ button.close svg{
   font-variant: small-caps;
   letter-spacing: 1px;
   font-size: 18px;
+  font-family: 'Futura';
   font-weight: 700;
 }
 .citySelection__selected span{
@@ -161,7 +183,9 @@ button.close svg{
   margin-left: 10px;
   font-variant: normal;
   letter-spacing: normal;
+  cursor: pointer;
   font-weight: normal;
+  font-family: 'FuturaMediumC';
   border-bottom: 1px dotted;
 }
 .citySelection__select{
@@ -197,6 +221,7 @@ button.close svg{
   font-variant: small-caps;
   letter-spacing: 1px;
   font-size: 18px;
+  font-family: 'Futura';
   font-weight: 700;
 }
 .modalTable{

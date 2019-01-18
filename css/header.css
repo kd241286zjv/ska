@@ -57,6 +57,7 @@ header{
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  font-family: 'FuturaMediumC';
   -ms-align-items: center;
   align-items: center;
   justify-content: center;

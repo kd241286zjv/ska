@@ -86,8 +86,10 @@
 }
 .productDetailsPrice__old{
   text-decoration: line-through;
+  font-family: 'FuturaMediumC';
 }
 .productDetailsPrice__actual{
+  font-family: 'Futura';
   font-weight: 700;
 }
 .productDetailsAdd__addToFav{

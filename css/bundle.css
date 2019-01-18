@@ -13,6 +13,7 @@
 }
 .productDesc__price{
   font-size: 32px;
+  font-family: 'Futura';
   font-weight: 700;
 }
 .productCategory{
@@ -33,6 +34,7 @@
   font-size: 14px;
   letter-spacing: 3px;
   line-height: 1.2;
+  font-family: 'FuturaMediumC';
   background-color:transparent;
   font-variant: small-caps;
   text-transform: uppercase;

@@ -61,6 +61,8 @@ ul.productDetailsColumn__list li span{
 }
 .detailsRow .showMore:after{
   content:'Показать больше';
+  font-family: 'Futura';
+  font-weight: 700;
 }
 .detailsRow.toggled .showMore:after{
   content:'Скрыть';

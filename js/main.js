@@ -111,8 +111,13 @@ $(document).ready(function(){
       });
     }
   });
-  $('.citySelection__select').click(function(){
-    $('.overlay-wrapper').fadeToggle('300');
+  $('.citySelection__selected span').click(function(){
+    $('.overlay-wrapper').fadeIn('300');
+  });
+  $('.cityList ul li a').click(function(){
+    var city = $(this).text();
+    $('.citySelection__selected span').text(city);
+    $('.overlay-wrapper').fadeOut('300');
   });
   $('.productImage__remove').click(function(){
     $(this).parents('.productColumn').fadeOut('');
