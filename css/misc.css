@@ -53,10 +53,10 @@
   width: 20px;
   height: auto;
 }
-.socials__social.ok{
-  background-color: #FF541E;
+.socials__social.fb{
+  background-color: #446196;
 }
-.socials__social.ok svg{
+.socials__social.fb svg{
   height: 18px;
   width: auto;
 }
