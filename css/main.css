@@ -12,7 +12,7 @@
 @font-face {
 	font-family: 'Futura';
 	src: url('fonts/ParaType - Futura PT Bold.eot');
-	src: url('fonts/futura-normal_18c37033cb2f4666b96bef249d023a4e.woff') format('woff'), url('fonts/futura-normal_18c37033cb2f4666b96bef249d023a4e.ttf') format('truetype');
+	src: url('fonts/ParaType - Futura PT Bold.woff') format('woff'), url('fonts/ParaType - Futura PT Bold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }

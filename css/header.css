@@ -67,6 +67,8 @@ header{
   align-items: center;
   justify-content: center;
   height: 60px;
+  font-family: 'FuturaMediumC';
+  font-weight: 500;
   padding: 0 15px;
   cursor: pointer;
   -webkit-transition: .3s all ease;
