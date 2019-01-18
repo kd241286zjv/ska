@@ -35,7 +35,7 @@
   outline: none;
 }
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'FuturaMediumC';
   font-weight: 400;
   font-size: 16px;
 }
@@ -390,5 +390,53 @@ button.close svg{
 @media(max-width: 575px){
   section{
     padding: 30px 0;
+  }
+  .modal-body{
+    padding: 40px 10px;
+  }
+  button.close{
+    top: 10px;
+  }
+  .modal-body h2{
+    margin-bottom: 20px;
+  }
+  .modalTable thead{
+    display: none;
+  }
+  .modalTable tbody tr{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: auto;
+  }
+  .modalTable tbody tr td, .modalTable tbody tr td:first-child, .modalTable tbody tr td:nth-child(2), .modalTable tbody tr td:nth-child(3), .modalTable tbody tr td:last-child{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  .modalTable tbody tr{
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+  }
+  .citySelection{
+    margin-bottom: 40px;
+  }
+  .modal-content{
+    height: auto;
+  }
+  .modalButtons{
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .modalButtons__button:first-child{
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .modalButtons__button{
+    height: 50px;
   }
 }
