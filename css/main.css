@@ -439,3 +439,66 @@ button.close svg{
     height: 50px;
   }
 }
+
+button span.particle{
+	position: absolute;
+	z-index: 1;
+}
+button span.particle:nth-child(5) svg{
+	width: 10px;
+	height: 10px;
+	left: calc(50% - 5px);
+	top: calc(50% - 5px);
+}
+button span.particle:nth-child(2) svg{
+	width: 6px;
+	height: 6px;
+	left: calc(50% - 3px);
+	top: calc(50% - 3px);
+}
+button span.particle:nth-child(3) svg{
+	width: 8px;
+	height: 8px;
+	left: calc(50% - 4px);
+	top: calc(50% - 4px);
+}
+button span.particle:nth-child(4) svg{
+	width: 4px;
+	height: 4px;
+	left: calc(50% - 2px);
+	top: calc(50% - 2px);
+}
+button svg{
+	z-index: 2;
+}
+button{
+	position: relative;
+}
+@keyframes span1{
+	from{transform: rotate(0) translateX(0); opacity: 1;}
+	to{transform: rotate(45deg) translateX(30px); opacity:0;}
+}
+@keyframes span2{
+	from{transform: rotate(0) translateX(0); opacity: 1;}
+	to{transform: rotate(15deg) translateX(-30px); opacity:0;}
+}
+@keyframes span3{
+	from{transform: rotate(0) translateX(0); opacity: 1;}
+	to{transform: rotate(-20deg) translateX(30px); opacity:0;}
+}
+@keyframes span4{
+	from{transform: rotate(0) translateX(0); opacity: 1;}
+	to{transform: rotate(-160deg) translateX(-30px); opacity:0;}
+}
+button.added span.particle:nth-child(2){
+	animation: span1 1s ease-out;
+}
+button.added span.particle:nth-child(3){
+	animation: span2 1s ease-out;
+}
+button.added span.particle:nth-child(4){
+	animation: span3 1s ease-out;
+}
+button.added span.particle:nth-child(5){
+	animation: span4 1s ease-out;
+}
