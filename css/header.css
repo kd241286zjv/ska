@@ -7,6 +7,12 @@ header{
     max-width: 1366px;
   }
 }
+.searchPanel__button-mobile{
+  display: none;
+}
+.close-mobile{
+  display: block;
+}
 .searchOverlay{
   display: none;
   position: fixed;
@@ -512,22 +518,40 @@ li.headerSubmenuLists > ul > li:hover, li.headerSubmenuLists > ul > li.active{
   }
 }
 @media(max-width: 575px){
-  .searchPanel__button{
-    z-index: 1;
-  }
-  .searchPanel input{
-    display: none;
-  }
-  .searchPanel{
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .searchPanel__button{
+  .searchPanel__button-mobile{
+    display: block;
     position: static;
   }
-  .searchPanel__button svg path{
+  .searchOverlay{
+    display: block;
+    background-color: #eee;
+  }
+  .searchPanel{
+    display: none;
+    z-index: 15;
+    position: fixed;
+    padding: 50px;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .searchPanel__button{
+    right: 65px;
+    top: 54px;
+  }
+  .close-mobile{
+    display: block;
+    position: absolute;
+    top: 54px;
+    right: 18px;
+    z-index: 12;
+  }
+  .close-mobile svg{
+    width: 20px;
+    height: 20px;
+  }
+  .searchPanel__button-mobile svg path{
     fill:#fff;
   }
   .userPanel{

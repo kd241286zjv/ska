@@ -131,4 +131,12 @@ $(document).ready(function(){
   $('.searchPanel__input').blur(function(){
     $('.searchOverlay').fadeOut('');
   });
+  if(screen.width <= 576){
+    $('.searchPanel__button-mobile').click(function(){
+      $('.searchPanel').fadeIn('300');
+    });
+    $('.close-mobile').click(function(){
+      $('.searchPanel').fadeOut('300');
+    });
+  }
 });
