@@ -147,6 +147,8 @@ header{
   flex-grow: 1;
   display: -webkit-flex;
   display: -ms-flex;
+  font-family: 'FuturaBookC';
+  font-weight: 400;
   display: flex;
   -ms-align-items: center;
   align-items: center;
@@ -154,6 +156,10 @@ header{
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
+}
+.headerNav > ul > li > ul > li.discount{
+  font-weight: 700;
+  font-family: 'FuturaMediumC';
 }
 .headerNav > ul > li > ul > li:hover, .headerNav > ul > li > ul > li.active{
   color: #666;
