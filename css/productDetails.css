@@ -3,11 +3,12 @@
 }
 .productDetailsColumn__header{
   font-size: 18px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
+  font-family: 'FuturaMediumC';
   font-weight: 700;
   font-variant: small-caps;
-  color: #525050;
+  color: #999;
   margin-bottom: 20px;
 }
 .productDetailsColumn__list{
