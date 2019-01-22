@@ -1,4 +1,29 @@
 $(document).ready(function(){
+  if(screen.width > 1200 && $('.bundle-swiper-container .swiper-slide').length > 4){
+    var bundleSwiper = new Swiper('.bundle-swiper-container', {
+      navigation: {
+        nextEl: '.bundle-swiper-button-next',
+        prevEl: '.bundle-swiper-button-prev',
+      },
+      pagination: {
+        el: '.bundle-swiper-pagination',
+      },
+      slidesPerView: 4
+    });
+    $('.swiper-button-next, .swiper-button-prev').css('display', 'block');
+  }else if(screen.width < 1200 && $('.bundle-swiper-container .swiper-slide').length > 3){
+    var bundleSwiper = new Swiper('.bundle-swiper-container', {
+      navigation: {
+        nextEl: '.bundle-swiper-button-next',
+        prevEl: '.bundle-swiper-button-prev',
+      },
+      pagination: {
+        el: '.bundle-swiper-pagination',
+      },
+      slidesPerView: 2,
+    });
+    $('.swiper-button-next, .swiper-button-prev').css('display', 'block');
+  }else if(screen.width < 768 && $('.bundle-swiper-container .swiper-slide').length > 2){
   var bundleSwiper = new Swiper('.bundle-swiper-container', {
     navigation: {
       nextEl: '.bundle-swiper-button-next',
@@ -7,21 +32,32 @@ $(document).ready(function(){
     pagination: {
       el: '.bundle-swiper-pagination',
     },
-    slidesPerView: 4,
-    breakpoints:{
-      1200:{
-        slidesPerView: 3,
-      },
-      768:{
-        slidesPerView: 2,
-      },
+    slidesPerView: 2,
       576:{
         slidesPerView: 2,
         spaceBetween: 0,
         freeMode: true,
       }
-    }
-  });
+    });
+    $('.swiper-button-next, .swiper-button-prev').css('display', 'block');
+  }else if(screen.width < 576 && $('.bundle-swiper-container .swiper-slide').length > 2){
+  var bundleSwiper = new Swiper('.bundle-swiper-container', {
+    navigation: {
+      nextEl: '.bundle-swiper-button-next',
+      prevEl: '.bundle-swiper-button-prev',
+    },
+    pagination: {
+      el: '.bundle-swiper-pagination',
+    },
+    slidesPerView: 2,
+    spaceBetween: 0,
+    freeMode: true,
+    });
+    $('.swiper-button-next, .swiper-button-prev').css('display', 'block');
+  }else{
+    $('.bundle-swiper-container').css('width', '100%');
+    $('.bundle-swiper-container .swiper-slide').css('max-width', '100%');
+  }
   var productSwiper = new Swiper('.product-swiper-container', {
 		pagination: {
       el: '.product-swiper-pagination',
